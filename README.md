@@ -1,0 +1,2 @@
+# veranstaltungsmanagement
+Veranstaltungsmanagement Tool für Modulare Softwareentwicklung im Frontend
