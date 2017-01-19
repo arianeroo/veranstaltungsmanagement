@@ -1,6 +1,14 @@
 Module:
-Kalender (+Uhrzeiten)
-Veranstaltungsübersicht - Kacheln
-"Teilen"-Formular
-Textfelder (Beschreibung, Anleitung)
+Sections
+Maps
+Headings
+Poster
+Media
+
+Components:
+Navigation
+
+Layouts:
+Footer
+Main
 
