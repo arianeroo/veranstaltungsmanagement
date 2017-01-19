@@ -1,0 +1,47 @@
+/**
+Map
+
+Das Map-Modul stellt standardmäßig eine Google-Map mit fester Adresse dar.
+
+Markup:
+<div class="map">
+    <div class="map__address  h-align--center">
+        <p><b>Ariane Rosing</b></p>
+        <p>Bregstraße 40<br>
+        78120 Furtwangen</p>
+        <p>Email: <a href="mailto:ariane.rosing@gmail.com">ariane.rosing@gmail.com</a><br>
+        Tel: <a href="tel:+4915784690080">+49 157 84690080</a></p>
+    </div>
+    <div class="map__canvas" id="map_canvas"></div>
+    <script type="text/javascript">window.setTimeout("initGmaps();",300);
+        function initGmaps(){
+            var myOptions = {
+            zoom:15,center:new google.maps.LatLng(48.0466831, 8.197425100000032),mapTypeId: google.maps.MapTypeId.ROADMAP};
+            map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+            marker = new google.maps.Marker({map: map, position: new google.maps.LatLng(48.0466831, 8.197425100000032)});
+            infowindow = new google.maps.InfoWindow({content: "<b>Ariane Rosing</b><br>Bregstraße 40<br>78120 Furtwangen"});
+            google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});
+            infowindow.open(map,marker);}
+    </script>
+</div>
+
+Styleguide 3.3
+*/
+
+.map {
+    height: 400px;
+
+    &__address {
+        width: 300px;
+        height: 100%;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    &__canvas {
+        width: 600px;
+        height: 100%;
+        display: inline-block;
+        overflow: hidden;
+    }
+}
