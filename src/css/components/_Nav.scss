@@ -1,1 +1,55 @@
-.Nav {}
+/**
+Navi
+
+Die Navigations-Komponente stellt eine vertikale Navigation dar.
+
+<style>
+    .Nav {
+        position: static;
+    }
+</style>
+
+Markup:
+<nav class="Nav">
+    <ul>
+        <li class="Nav__item"><a href="#part_1">Home</a></li>
+        <li class="Nav__item"><a href="#part_2">About</a></li>
+        <li class="Nav__item"><a href="#part_3">Projects</a></li>
+        <li class="Nav__item"><a href="#part_4">Contact</a></li>
+    </ul>
+</nav>
+
+Styleguide 4.1
+*/
+
+
+.Nav {
+    position: fixed;
+    top: $spacer;
+    right: $spacer;
+
+
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    &__item {
+        display: inline-block;
+        list-style: none;
+        color: color('blue', 'light');
+        font-size: 1.5em;
+
+        a {
+            padding: 14px 16px;
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+            color: inherit;
+
+            &:hover {
+                text-decoration: line-through;
+            }
+        }
+    }
+}
