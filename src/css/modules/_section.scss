@@ -11,7 +11,7 @@ Markup:
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum modi fugit, doloribus quam, dolore id.</p>
 </section>
 
-Styleguide 3.3
+Styleguide 3.5
 */
 
 .section {
@@ -19,15 +19,4 @@ Styleguide 3.3
     width: 100%;
     max-width: 1200px;
     padding: $spacer * 4 $spacer * 2;
-
-    /*opacity: 0;
-    transition: .5s;*/
-
-    /*&:first-of-type {
-        opacity: 1;
-    }
-
-    &:target {
-        opacity: 1;
-    }*/
 }
