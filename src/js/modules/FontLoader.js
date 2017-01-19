@@ -1,27 +1,33 @@
 import FontFaceObserver from 'fontfaceobserver';
 
-const sourceSans400 = new FontFaceObserver('Source Sans Pro', {
+const openSansCondensed300 = new FontFaceObserver('Open Sans Condensed', {
+    weight: 300
+});
+
+const openSansCondensed700 = new FontFaceObserver('Open Sans Condensed', {
+    weight: 700
+});
+
+const libreBaskerville400 = new FontFaceObserver('Libre Baskerville', {
     weight: 400
 });
 
-const sourceSans400Italic = new FontFaceObserver('Source Sans Pro', {
+const libreBaskerville400Italic = new FontFaceObserver('Libre Baskerville', {
     weight: 400,
     style: 'italic'
 });
 
-const sourceSans700 = new FontFaceObserver('Source Sans Pro', {
+const libreBaskerville700 = new FontFaceObserver('Libre Baskerville', {
     weight: 700
 });
 
-const sourceSans600 = new FontFaceObserver('Source Sans Pro', {
-    weight: 600
-});
 
 Promise.all([
-    sourceSans400.check(),
-    sourceSans400Italic.check(),
-    sourceSans700.check(),
-    sourceSans600.check()
+    openSansCondensed300.check(),
+    openSansCondensed700.check(),
+    libreBaskerville400.check(),
+    libreBaskerville400Italic.check(),
+    libreBaskerville700.check()
 ]).then(() => {
     document.documentElement.className += ' fl';
 }, () => {

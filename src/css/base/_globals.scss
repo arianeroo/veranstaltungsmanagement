@@ -47,17 +47,17 @@ $colors : (
  *
  * Schriftfamilie | Schnitt | Sass | Beispiel
  * --- | --- | --- | ---
- * Source Sans Pro | Normal | `$font__primary;` | <span style="font-family: 'Source Sans Pro', sans-serif">Grumpy wizards make toxic brew for the evil Queen and Jack.</span>
- * &nbsp; | Italic | `$font__primary; font-style: italic;` | <span style="font-family: 'Source Sans Pro', sans-serif; font-style: italic">Grumpy wizards make toxic brew for the evil Queen and Jack.</span>
- * &nbsp; | Semibold | `$font__primary; font-weight: 600;` | <span style="font-family: 'Source Sans Pro', sans-serif; font-weight: 600">Grumpy wizards make toxic brew for the evil Queen and Jack.</span>
- * &nbsp; | Bold | `$font__primary; font-weight: 700;` | <span style="font-family: 'Source Sans Pro', sans-serif; font-weight: 700">Grumpy wizards make toxic brew for the evil Queen and Jack.</span>
- * Droid Serif | Italic | `$font__secondary; font-style: italic` | <span style="font-family: 'Droid Serif', serif; font-style: italic">Grumpy wizards make toxic brew for the evil Queen and Jack.</span>
+ * Open Sans Condensed | Light | `$font__primary; font-weight: 300;` | <span style="font-family: 'Open Sans Condensed', sans-serif; font-weight: 300">Grumpy wizards make toxic brew for the evil Queen and Jack.</span>
+ * &nbsp; | Bold | `$font__primary; font-weight: 700;` | <span style="font-family: 'Open Sans Condensed', sans-serif; font-weight: 700">Grumpy wizards make toxic brew for the evil Queen and Jack.</span>
+ * Libre Baskerville | Regular | `$font__secondary;` | <span style="font-family: 'Libre Baskerville', serif;">Grumpy wizards make toxic brew for the evil Queen and Jack.</span>
+ * &nbsp; | Italic | `$font__secondary; font-style: italic;` | <span style="font-family: 'Libre Baskerville', sans-serif; font-style: italic">Grumpy wizards make toxic brew for the evil Queen and Jack.</span>
+ * &nbsp; | Bold | `$font__secondary; font-weight: 700;` | <span style="font-family: 'Libre Baskerville', sans-serif; font-weight: 700">Grumpy wizards make toxic brew for the evil Queen and Jack.</span>
  *
  * Styleguide 1.2
  */
 
-$font__primary: 'Source Sans Pro', sans-serif;
-$font__secondary: 'Droid Serif', serif;
+$font__primary: 'Open Sans Condensed', sans-serif;
+$font__secondary: 'Libre Baskerville', serif;
 
 // Breakpoints
 $breakpoints: (

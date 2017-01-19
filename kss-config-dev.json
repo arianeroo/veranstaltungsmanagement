@@ -3,6 +3,7 @@
     "destination": "dist/docs",
     "template": "node_modules/bkss/dist/template",
     "css": [
+        "https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700|Open+Sans+Condensed:300,700",
         "/css/main.css"
     ],
     "js": "/js/all.js",
