@@ -1,0 +1,38 @@
+/*
+Footer
+
+Das Footer-Modul verwaltet den abschließenden Bereich der Webseite.
+
+Markup:
+<footer class="l-footer">
+    <ul>
+        <li><a target="blank" href="http://www.facebook.com/arianexyz"><img src='/media/icon__facebook.png' /></a></li>
+        <li><a target="blank" href="https://www.xing.com/profile/Ariane_Rosing"><img src='/media/icon__xing.png' /></a></li>
+        <li><a target="blank" href="https://plus.google.com/109609927116071772423"><img src='/media/icon__google-plus.png' /></a></li>
+        <li><a target="blank" href="mailto:ariane.rosing@gmail.com"><img src='/media/icon__mail.png' /></a></li>
+    </ul>
+</footer>
+
+Styleguide 2.2
+*/
+
+.l-footer {
+    position: fixed;
+    right: $spacer;
+    bottom: $spacer;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+            display: inline-block;
+
+            a {
+                display: inline-block;
+                padding: 0 $spacer / 2;
+            }
+        }
+    }
+}
