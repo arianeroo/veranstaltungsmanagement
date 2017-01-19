@@ -1,6 +1,11 @@
 html {
     font-size: 100%;
     box-sizing: border-box;
+
+body {
+    .fl & {
+        font-family: $font__primary;
+    }
 }
 
 *, *:before, *:after { box-sizing: inherit; }
