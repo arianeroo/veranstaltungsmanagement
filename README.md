@@ -1,2 +1,2 @@
-# veranstaltungsmanagement
-Veranstaltungsmanagement Tool für Modulare Softwareentwicklung im Frontend
+# Portfolio
+Portfolio äqzuvalent einer Visitenkarte
