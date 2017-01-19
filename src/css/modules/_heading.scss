@@ -1,0 +1,67 @@
+/**
+ * Heading
+ *
+ * Styleguide 3.4
+ */
+
+.heading {
+    margin: 0;
+    padding: 0;
+    hyphens: manual;
+    word-wrap: break-word;
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    & + & {
+        padding-top: $spacer;
+    }
+}
+
+/**
+ * Heading 1
+ *
+ * Schriftgöße 36px
+ *
+ *
+ * Markup:
+ * <h1 class="heading  heading--1">Lorem ipsum dolor sit amet.</h1>
+ * <h2 class="heading  heading--1">Lorem ipsum dolor sit amet.</h2>
+ * <h3 class="heading  heading--1">Lorem ipsum dolor sit amet.</h3>
+ * <div class="heading  heading--1">Lorem ipsum dolor sit amet.</div>
+ * <p class="heading  heading--1">Lorem ipsum dolor sit amet.</p>
+ *
+ * Styleguide 3.4.1
+ */
+
+.heading--1 {
+    @include font-size (36);
+    line-height: 1.125;
+}
+
+/**
+ * Heading 2
+ *
+ * Schriftgröße 28px
+ *
+ * Markup:
+ * <h1 class="heading  heading--2">Lorem ipsum dolor sit amet, consectetur.</h1>
+ * <h2 class="heading  heading--2">Lorem ipsum dolor sit amet, consectetur.</h2>
+ * <h3 class="heading  heading--2">Lorem ipsum dolor sit amet, consectetur.</h3>
+ * <div class="heading  heading--2">Lorem ipsum dolor sit amet, consectetur.</div>
+ * <p class="heading  heading--2">Lorem ipsum dolor sit amet, consectetur.</p>
+ *
+ * Styleguide 3.4.2
+ */
+
+.heading--2 {
+    @include font-size (24);
+    line-height: 1.25;
+    font-family: serif;
+
+    .fl & {
+        font-family: $font__secondary;
+    }
+}
